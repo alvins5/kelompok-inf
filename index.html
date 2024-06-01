@@ -14,7 +14,7 @@
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                 <div class="col-md-3 mb-2 mb-md-0">
                     <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img class="bi" width="50" height="50" src="/logo.png"></img>
+                    <img class="bi" width="50" height="50" src="logo.png"></img>
                     </a>
                 </div>
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -27,14 +27,53 @@
                 <div class="col-md-3 text-end">
                     <button type="button" class="btn btn-outline-primary me-2">Login</button>
                     <button type="button" class="btn btn-primary">Sign-up</button>
+                    <script>
+                        document.querySelector('.btn').addEventListener('click', () => {
+                            window.location.href = '/Login/index.html'
+                        })
+                    </script>
                 </div>
             </header>
         </div>
-        <div class="content"></div>
+        <section id="home">
+            <div class="content" id="content">
+              <h3>Kaos BRANDED <br> Berkualitas Tinggi</h3>
+              <p>Order Sekarang Juga
+              </p>
+              <button id="btn">Shop Now</button>
+            </div>
+        </section>
+        <div class="content" id="content-1">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="dis1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="dis2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="dis3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
         <div class="footer">
             <div class="logo">
-                <img src="/logo.png" height="50" width="50" alt="">
+                <img src="logo.png" height="50" width="50" alt="">
             <div class="row">
                 <div class="footer-col">
                     <h4>connect with us</h4>
